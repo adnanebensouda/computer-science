@@ -1,12 +1,4 @@
-from math import sqrt,pow
 
-x= input("enter any number")
-
-y =sqrt(int(x))  #without using math
-a =pow(int(x),2) #without using math
-
-print("Square Root value", float(y))
-print("Square value", float(a))
 
 def si(p,r,t):
     return(p*r*t)
@@ -17,4 +9,8 @@ def SI(p,r=10,t=5):
  return(p*r*t/100)
 
 print(SI(10000))
+
+print(SI(20000,5))
+
+print(SI(50000,7,3))
 
