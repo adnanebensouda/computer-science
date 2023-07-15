@@ -23,9 +23,11 @@ elif(int(c)==3):
     x=input("enter first side triangle: ")
     y=input("enter second side of triangle: ")
     z=input("enter third side of triangle: ")
-    s=(int(x)+int(y)+int(z))/2
-    A=((int(s)-int(x))*(int(s)-int(y))*(int(s)-int(z))**0.5)
+    s= 4.5
+    b=s*(s-int(x))*(s-int(y))*(s-int(z))
+    A=sqrt(b)
+    two_numbers = "{:.2f}".format(A)
     print("Area=", end=" ")
-    print(int(A))
+    print(two_numbers)
 else:
     print("Wrong input")
