@@ -1,3 +1,6 @@
 
-n = eval(input("enter your numbers= "))
-print(n)
+n = input(str("enter your numbers= "))
+
+x=[i for a,i in enumerate(n)]
+
+print(x)
