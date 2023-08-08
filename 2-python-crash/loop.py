@@ -180,4 +180,126 @@ print(car == 'audi')
 age = 19
 if age >= 18:
     print("you are old enough to vote!")
-    
+"""Defines an integer addition function."""
+age = 17
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!\n")
+
+age = 12
+if age < 4:
+    print("Your admission cost is 0$.")
+elif age < 18:
+    print("Your admission cost is 5$.")
+else:
+    print("Your admission cost is 10$.")
+print("\n")
+
+age = 12
+
+if age < 4:
+    price = 0
+elif age < 65:
+    price = 5
+else:
+    price = 10
+
+print("Your admission cost is $" + str(price) + "\n")
+
+requested_toppings = ['mushrooms', 'extra sheese']
+
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+if 'extra sheese' in requested_toppings:
+    print("Adding extra sheese.")
+
+print("\nfinished making your pizza!\n")
+
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+elif 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+elif 'extra sheese' in requested_toppings:
+    print("Adding extra sheese.")
+
+print("Finished making your pizza!")
+
+alien = ['green', 'yellow', 'red']
+
+if 'green' in alien:
+    print("you earn 5 point")
+elif 'yellow' in alien:
+    print("you pass")
+elif 'red' in alien:
+    print("you fail")
+
+print("\n")
+
+age = 64
+
+if age <= 2:
+    print("the person is baby")
+elif age <= 4:
+    print("the person is toddler")
+elif age <= 13:
+    print("the  person kid")
+elif age <= 20:
+    print("the person is teenager")
+elif age <= 64:
+    print("the person is an adult")
+else:
+    print("person is an elder")
+
+print("\n")
+
+favourite_fruits = ['banana', 'apple', 'orange', 'berry',]
+
+if 'banana' in favourite_fruits:
+    print("i really like banana!")
+if 'orange' in favourite_fruits:
+    print("i really like orange!")
+if 'berry' in favourite_fruits:
+    print("i really like berry!")
+if 'apple' in favourite_fruits:
+    print("i really like apple!")
+
+print("\n")
+
+requested_toppings = ['mushrooms', 'green peppers', 'extra sheese']
+
+for requested_toppings in requested_toppings:
+    if requested_toppings == 'green peppers':
+        print("Sorry, we are out of green peppers right now.")
+    else:
+        print("Adding " + requested_toppings + ".")
+
+print("\nFinished making your pizza!\n")
+
+"""using multiple lists"""
+
+available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra sheese']
+
+requested_toppings = ['mushrooms', 'french fries', 'extra sheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print("Adding " + requested_topping + ".")
+    else:
+        print("Sorry we don't have " + requested_topping + ".")
+
+print("\nFinished making your pizza!")
+
+"""make list for five users"""
+
+list = ['Eric', 'carter', 'admin', ' jack']
+
+for lists in list:
+    if 'admin' in lists:
+        print("\nHello " + lists + " would you like to see a status report!")
+    else:
+        print("\nHello " + lists + " thank you for logging in again")
