@@ -302,4 +302,240 @@ for lists in list:
     if 'admin' in lists:
         print("\nHello " + lists + " would you like to see a status report!")
     else:
-        print("\nHello " + lists + " thank you for logging in again")
+        print("\nHello " + lists + " thank you for logging in again\n")
+
+users = ['google', 'youtube', 'twitter', 'yahoo', 'linkdin']
+
+if users:
+    for user in users:
+        print(user)
+
+else:
+        print("we need to find some users!")
+
+print("\n")
+
+current_users = ['jhon']
+
+new_users = ['adnane']
+
+for current_user in current_users:
+    if current_user in new_users:
+        print("that the username is available")
+    else:
+        print("the person will need to enter a new username")
+
+
+"""make this ex another time"""
+ordinal_n = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for ordinal_number in ordinal_n:
+        print(str(ordinal_number) + "th")
+print("\n")
+alien_0 = {'color': 'green', 'points': '5'}
+
+print(alien_0['color'])
+print(alien_0['points'])
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0['color'])
+
+new_points = alien_0['points']
+print("You just earned " + str(new_points) + " points!")
+
+print(alien_0)
+
+alien_0['x_position'] = 0
+
+alien_0['y_position'] = 25
+print(alien_0)
+
+alien_0 = {}
+
+alien_0['color'] = 'green'
+alien_0['points'] = 5
+
+print(alien_0)
+
+print("the alien is " + alien_0['color'] + ".")
+
+alien_0['color'] = 'yellow'
+print("the alien is " + alien_0['color'] + ".")
+
+print("\n")
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+print("Original x-position: " + str(alien_0['x_position']))
+
+# Move the alien to the right.
+# Determine how far to move the alien based on its current speed.
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+else:
+    # This must be a fast alien.
+    x_increment = 3
+
+# The new position is the old position plus the increment.
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+print("New x_positon: " + str(alien_0['x_position']))
+
+print(alien_0['speed'])
+
+alien_0['speed'] = 'fast'
+
+print(alien_0)
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+
+del alien_0['points']
+
+print(alien_0)
+
+favourite_languages = {
+    'jen': 'python',
+    'sraha': 'C',
+    'edward': 'reby',
+    'phil': 'python',
+}
+
+print("sarah's favorite language is " + favourite_languages['sraha'].title() + ".")
+
+person = {
+    'first_name': 'jhon',
+    'last_name': 'berzok',
+    'age': 27,
+    'city': 'new york'
+}
+print("\n")
+print("my name is " + person['first_name'] + " " + person['last_name'] + " i have " + str(person['age']) + " year's old i'm from " + person['city'])
+
+print("\n")
+favorite_number = {
+    'zack': '0634797291',
+    'jhon': '0637201932',
+    'carter': '0638729171'
+}
+
+print("zack favorite number is " + favorite_number['zack'] + ".")
+print("jhon favorite number is " + favorite_number['jhon'] + ".")
+print("carter favorite number is " + favorite_number['carter'] + ".")
+
+"""finish glossary"""
+print("\n")
+glossary = {
+    'sort': 'listing items',
+    'set': 'give you non duplicate values',
+    'if': 'condition',
+    'list': 'list of data',
+    'for': 'looping'
+}
+
+print("sort is " + glossary['sort'] + "\n" + "set is " + glossary['set'] + "\nif " + glossary['if'] + "\nlist " + glossary['list'] + "\nfor " + glossary['for'])
+
+
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi',
+}
+
+for k, v in user_0.items():
+    print("\nKey: " + k + "\nValue: " + v)
+
+print("\n")
+
+for n, l in favourite_languages.items():
+    print(n.title() + "'s favorite language is " + l.title() + ".")
+print("\n")
+
+for n in favourite_languages.keys():
+    print(n.title())
+
+friends = ['phil', 'sraha']
+
+print("\n")
+
+for name in favourite_languages.keys():
+    print(name)
+    if name in friends:
+        print("Hi " + name.title() + " I see your favorite language is " + favourite_languages[name].title() + "!")
+
+    if 'erin' not in favourite_languages.keys():
+        print("\nErin, please take our poll!")
+
+for name in sorted(favourite_languages.keys()):
+    print(name.title() + " thank you for taking the poll.")
+print("\n")
+for name in favourite_languages.keys():
+    print(name.title() + " thank you for taking the poll.")
+
+print("\n")
+
+print("The following langauge have been mentioned:")
+for l in favourite_languages.values():
+    print(l)
+print("\n")
+for l in set(favourite_languages.values()):
+    print(l)
+
+print(glossary)
+
+for k, v in glossary.items():
+    print(" i learn " + k.title() + " and it's mean " + v.title())
+print("\n")
+river = {
+    'nile': 'egypt',
+    'dead sea': 'lebanon',
+    'atlantis': 'spain',
+}
+
+for k, v in river.items():
+    print(k.title() + " runs through " + v.title())
+print("\n")
+print(favourite_languages.keys())
+friends = ['sasha', 'leran', 'micheal', 'phil', 'sraha']
+print("\n")
+for name in favourite_languages.keys():
+    if name in friends:
+        print("thank you for taking the poll " + name)
+    else:
+        print("\nyou have invition to take the poll " + name)
+print("\n")
+alien_0 = {
+    'color': 'green',
+    'points': 5
+}
+alien_1 = {
+    'color': 'yellow',
+    'points': '10'
+}
+alien_2 = {
+    'color': 'red',
+    'points': '15'
+}
+
+aliens = [alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+print("\n")
+# make an empty list for sorting aliens.
+
+aliens = []
+
+# make 30 green aliens.
+for alien_number in range(30):
+    new_alien = {'color':'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+# show the first 5 aliens:
+
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+#show how many aliens have been created.
+
+print("Total number of aliens: " + str(len(aliens)))
