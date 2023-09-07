@@ -659,3 +659,13 @@ while True:
     else:
         print("I'd love to go to " + city.title() + "!")
 
+current_number = 0
+while current_number < 2:
+    current_number += 1
+    if current_number % 2 == 1:
+        continue
+    print(current_number)
+
+x = 1
+while x <= 5:
+    print(x)
