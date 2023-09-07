@@ -530,6 +530,20 @@ for alien_number in range(30):
     new_alien = {'color':'green', 'points': 5, 'speed': 'slow'}
     aliens.append(new_alien)
 
+# show 3 aliens
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+# replace the 3 yellow with red
+for alien in aliens[0:3]:
+    if alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+
 # show the first 5 aliens:
 
 for alien in aliens[:5]:
@@ -539,3 +553,98 @@ print("...")
 #show how many aliens have been created.
 
 print("Total number of aliens: " + str(len(aliens)))
+
+# store information about a pizza being ordered.
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra sheese'],
+}
+
+# summarize the order.
+
+print("You ordered a " + pizza['crust'] + "-crust pizza" + "with the following toppings:")
+
+for topping in pizza['toppings']:
+    print("\t" + topping)
+
+favourite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favourite_languages.items():
+    print("\n" + name.title() + "'s favourite languages are:")
+    for language in languages:
+        print("\t" + language.title())
+
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+    },
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+    },
+}
+
+for username, user_info in users.items():
+    print("\nUsername: " + username)
+    full_name = user_info['first'] + " " + user_info['last']
+    location = user_info['location']
+
+    print("\tFull name: " + full_name.title())
+    print("\tlocation: "+ location.title())
+
+"""make the ex here ok"""
+
+"""input and while true"""
+
+"""remove comment to work
+message = input("Tell me something, and i will repeat it back to you: ")
+print(message)"""
+
+
+"""remove comment to work
+name = input("please enter you name:")
+print("Hello, " + name + "!")"""
+
+prompt = "if you tell us who you are, we can personalize the messages you see."
+"""prompt += "\nWhat is your first name? 
+name = input(prompt)
+print("\nHello, " + name + "!")"""
+
+
+"""remove comment to work
+age = input("How old are you? ")
+print(age)"""
+
+"""height = input("How tall are you, in inches? ")
+height = int(height)
+
+if height >= 36:
+    print("\nYou tall enough to ride!")
+else:
+    print("\nYou'll be to ride when you're a little older.")"""
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
+
+prompt = "\nTell me something i will repeat it back to you:"
+prompt += "\nEnter 'quit' to end the program."
+
+active = True
+while active:
+    message = input(prompt)
+
+    if message == 'quit':
+        active = False
+    else:
+        print(message)
+
