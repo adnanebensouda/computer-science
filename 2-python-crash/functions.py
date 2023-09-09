@@ -40,6 +40,7 @@ describe_pet(animal_type='hamster', pet_name='harry')
 
 print("\n")
 
+
 def make_shirt(text, size):
     print("A " + size + " shirt will be printed with the message: " + text)
 
@@ -48,7 +49,13 @@ make_shirt('hello world', 'medium')
 print("\n")
 make_shirt(size='large', text='i love python')
 
+print("\n")
 
 
+def describe_city(city, country='morocco'):
+    print(city + " is in " + country)
 
 
+describe_city('Reykjavik', 'Iceland')
+describe_city('antwerp', 'belgium')
+describe_city('tanger')
