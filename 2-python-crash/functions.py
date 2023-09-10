@@ -71,8 +71,6 @@ musician = get_formatted_name('jimi', 'hendrix')
 print("\n" + musician + "\n")
 
 
-
-
 def get_formatted_name(first_name, last_name, middle_name=''):
     """Return a full name, neatly formatted."""
     if middle_name:
@@ -98,4 +96,41 @@ def build_person(first_name, last_name, age=''):
 
 musician = build_person('jimi', 'handrix', age='27')
 print(musician)
+
+
+def get_formatted_name(first_name, last_name):
+    full_name = first_name + ' ' + last_name
+    return full_name.title()
+
+
+# this is an infinite loop!
+
+while True:
+    print("\nPlease tell me you name :")
+    print("enter 'q' at any time to quit")
+    f_name = input("first name: ")
+    if f_name == 'q':
+        break
+    l_name = input("last name: ")
+    if l_name == 'q':
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print("\nHello, " + formatted_name + "!")
+
+"""third ex"""
+
+
+def city_country(city, country):
+    c_country = city + ", " + country
+    return c_country
+
+
+n_country = city_country('Tanger', 'morocco')
+n_count = city_country('antwerp', 'belgium')
+n_countr = city_country('paris', 'french')
+print(n_country)
+print(n_count)
+print(n_countr)
+
 
