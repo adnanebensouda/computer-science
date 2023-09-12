@@ -131,6 +131,34 @@ n_count = city_country('antwerp', 'belgium')
 n_countr = city_country('paris', 'french')
 print(n_country)
 print(n_count)
-print(n_countr)
+print(n_countr + "\n")
 
 
+def make_album(first_name, last_album):
+    artist = {'first': first_name, 'last': last_album}
+    return artist
+
+
+artists = make_album('Radio head', 'The Bends')
+ar_twists = make_album('Kanye West', 'Graduation')
+art_lists = make_album('Blur', 'Modern Life Is Rubbish')
+print(artists)
+print(ar_twists)
+print(art_lists)
+
+
+def make_album(artist_name, album_title, num_tracks=None):
+    album = {'artist': artist_name, 'title': album_title}
+    if num_tracks is not None:
+        album['tracks'] = num_tracks
+    return album
+
+
+# Example function calls
+album1 = make_album('Radiohead', 'The Bends', 12)  # Includes number of tracks
+album2 = make_album('Kanye West', 'Graduation')  # No number of tracks provided
+album3 = make_album('Blur', 'Modern Life Is Rubbish', 14)  # Includes number of tracks
+
+print(album1)
+print(album2)
+print(album3)
