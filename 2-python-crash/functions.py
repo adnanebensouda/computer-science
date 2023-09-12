@@ -246,3 +246,7 @@ completed_models = []
 
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+
+designs = ['google', 'youtube', 'twitter']
+show_completed_models(designs[:])
+print_models(unprinted_designs[:], completed_models)
