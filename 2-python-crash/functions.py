@@ -162,3 +162,36 @@ album3 = make_album('Blur', 'Modern Life Is Rubbish', 14)  # Includes number of 
 print(album1)
 print(album2)
 print(album3)
+
+
+def make_album(artist_name, album_title, num_tracks=None):
+    album = {'artist': artist_name, 'title': album_title}
+    if num_tracks is not None:
+        album['tracks'] = num_tracks
+    return album
+
+
+while True:
+    print("\nEnter album information (or 'q' to quit):")
+    artist = input("Enter artist name: ")
+
+    if artist.lower() == 'q':
+        break  # Exit the loop if the user enters 'q'
+
+    title = input("Enter album title: ")
+
+    album = make_album(artist, title)
+    print("Album information:")
+    print(album)
+
+
+def greet_users(names):
+    for name in names:
+        msg = "Hello, " + name.title() + "!"
+        print(msg)
+
+
+usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+
