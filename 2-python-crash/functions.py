@@ -184,8 +184,6 @@ while True:
     print("Album information:")
     print(album)
 
-"""from here"""
-
 print("\n")
 
 
@@ -199,6 +197,8 @@ usernames = ['hannah', 'ty', 'margot']
 greet_users(usernames)
 
 print("\n")
+
+"""from here"""
 
 # Start with some designs that need to be printed.
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
@@ -250,3 +250,15 @@ show_completed_models(completed_models)
 designs = ['google', 'youtube', 'twitter']
 show_completed_models(designs[:])
 print_models(unprinted_designs[:], completed_models)
+
+"""ex 4 ex"""
+print("\n")
+
+def show_magicians(magicians):
+    print("all the magician's in the list: ")
+    for magician in magicians:
+        print(magician)
+
+magicians = ['Harry Houdini', 'David Copperfield', 'Penn & Teller', 'Derren Brown', 'Dynamo']
+
+show_magicians(magicians)
