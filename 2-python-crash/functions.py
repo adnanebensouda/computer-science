@@ -254,11 +254,24 @@ print_models(unprinted_designs[:], completed_models)
 """ex 4 ex"""
 print("\n")
 
+
 def show_magicians(magicians):
     print("all the magician's in the list: ")
     for magician in magicians:
         print(magician)
 
+
+def make_great(magicians):
+    for i in range(len(magicians)):
+        magicians[i] = "the great " + magicians[i]
+
+
 magicians = ['Harry Houdini', 'David Copperfield', 'Penn & Teller', 'Derren Brown', 'Dynamo']
+
+show_magicians(magicians)
+
+make_great(magicians)
+
+print("\nUpdated list of magicians:")
 
 show_magicians(magicians)
