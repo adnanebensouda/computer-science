@@ -275,3 +275,9 @@ make_great(magicians)
 print("\nUpdated list of magicians:")
 
 show_magicians(magicians)
+
+magician = ['Shin Lim', 'David Copperfield', 'Matt Franco', 'Penn & Teller']
+
+make_great(magician)
+
+show_magicians(magician)
